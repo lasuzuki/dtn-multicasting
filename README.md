@@ -18,7 +18,5 @@ Use multicasting when the messages you are sending should be delivered to all th
 
 # Basic Concepts of the Bundle Protocol Version 7
 
-This section gives an overview of bundle protocols, referring to [RFC 4838](Cerf, V.G., Burleigh, S.C., Durst, R.C., Fall, K., Hooke, A.J., Scott, K.L., Torgerson, L., Weiss, H.S.: Delay-Tolerant Networking Architecture. Tech. Rep. RFC
-4838, IETF (2007))
-and the current version of the [Bundle Protocol (BP)](Burleigh, S., Fall, K., Birrane, E.J.: Bundle Protocol Version 7 (draft version 13).
-Tech. rep., IETF (2019)).
+This section gives an overview of bundle protocols, referring to [RFC 4838](https://tools.ietf.org/html/rfc4838)
+and the current version of the [Bundle Protocol (BP)](https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31).
