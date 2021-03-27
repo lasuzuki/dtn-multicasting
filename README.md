@@ -77,8 +77,7 @@ Transmission and reception episodes are individually configured, started and end
 
 # Basic Concepts of Interplanetary Overlay Network
 
-Delay-Disruption Tolerant Networking (DTN) is NASA’s solution for reliable, automated network communications in space missions. The [DTN2](http://www.dtnrg.org/docs/presentations/IETF60/dtn-impl-ietf-8-6-
-04-demmer.pdf) reference implementation of the Delay-Tolerant Networking (DTN) [RFC 4838](https://tools.ietf.org/html/rfc4838)
+Delay-Disruption Tolerant Networking (DTN) is NASA’s solution for reliable, automated network communications in space missions. The [DTN2](http://www.dtnrg.org/docs/presentations/IETF60/dtn-impl-ietf-8-6-04-demmer.pdf) reference implementation of the Delay-Tolerant Networking (DTN) [RFC 4838](https://tools.ietf.org/html/rfc4838)
 and the current version of the [Bundle Protocol (BP)](https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31) is the foundation for a wide range of current DTN industrial and research applications. 
 
 The Jet Propulsion Laboratory (JPL) has developed an alternative implementation of BP, named “Interplanetary Overlay Network” (ION). ION addresses those constraints and enables delay-tolerant network communications in interplanetary mission operations. 
