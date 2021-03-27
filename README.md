@@ -35,13 +35,25 @@ $ bpsink imc:19.0 &
 ```
 Messages sent on bpsource imc:19.0 will be delivered to all end points registered in the interplanetary multicasting eid. Note that you can also use **bprecvfile** and **bpsendfile** to send images and videos over multicasting.
 
-## Why ION? Digital Communication in Interplanetary Scenarios
+```
+$ bpsendfile ipn:1.1 imc:19.0 image.jpeg
+$ bprecvfile imc:19.0 1
+```
+
+# Why ION? Digital Communication in Interplanetary Scenarios
 
 In this section I will give a little overview of the basic concepts of the Interplanetary Overlay Network from Nasa.
 
 Digital communication between interplanetary spacecraft and space flight control centres on Earth is subject to constraints that differ in some ways from those that characterize terrestrial communications. 
 
-**Space communication challenges**
+## Basic Concepts of Interplanetary Overlay Network
+
+Delay-Disruption Tolerant Networking (DTN) is NASA’s solution for reliable, automated network communications in space missions. The [DTN2](http://www.dtnrg.org/docs/presentations/IETF60/dtn-impl-ietf-8-6-04-demmer.pdf) reference implementation of the Delay-Tolerant Networking (DTN) [RFC 4838](https://tools.ietf.org/html/rfc4838)
+and the current version of the [Bundle Protocol (BP)](https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31) is the foundation for a wide range of current DTN industrial and research applications. 
+
+The Jet Propulsion Laboratory (JPL) has developed an alternative implementation of BP, named “Interplanetary Overlay Network” (ION). ION addresses those constraints and enables delay-tolerant network communications in interplanetary mission operations. 
+
+## Space communication challenges
 
 - Extreme distances and high rates of data loss due to radio signal interference make communicating between Earth and interplanetary spacecraft a challenge.
 - Constant orbital movement of the satellites, 
@@ -75,9 +87,4 @@ To communicate across these vast distances, NASA manages three communication net
 Communication opportunities are scheduled, based on orbit dynamics and operation plans. Sometimes a spacecraft is on the far side of a planet and you cannot communicate with it.
 Transmission and reception episodes are individually configured, started and ended by command. Reliability over deeps space links is by management: on loss of data, command retransmission. More recently for Mars missions we have managed forwarding through relay points so that data from these surface vehicles is relayed thought Odyssey and other orbiting mars vehicles.
 
-# Basic Concepts of Interplanetary Overlay Network
 
-Delay-Disruption Tolerant Networking (DTN) is NASA’s solution for reliable, automated network communications in space missions. The [DTN2](http://www.dtnrg.org/docs/presentations/IETF60/dtn-impl-ietf-8-6-04-demmer.pdf) reference implementation of the Delay-Tolerant Networking (DTN) [RFC 4838](https://tools.ietf.org/html/rfc4838)
-and the current version of the [Bundle Protocol (BP)](https://tools.ietf.org/html/draft-ietf-dtn-bpbis-31) is the foundation for a wide range of current DTN industrial and research applications. 
-
-The Jet Propulsion Laboratory (JPL) has developed an alternative implementation of BP, named “Interplanetary Overlay Network” (ION). ION addresses those constraints and enables delay-tolerant network communications in interplanetary mission operations. 
